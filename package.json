@@ -6,7 +6,6 @@
   "scripts": {
     "start": "tsc && \"node ./build/index.js\"",
     "dev": "tsc-watch --onSuccess \"node ./build/index.js\"",
-    "build": "npx tsc",
     "prod": "pm2 start ./build/index.js --name FitJournalBackend",
     "prod-kill": "pm2 stop FitJournalBackend",
     "test": "echo \"Error: no test specified\" && exit 1"
