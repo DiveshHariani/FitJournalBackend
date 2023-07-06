@@ -8,6 +8,9 @@ const app = (0, express_1.default)();
 app.use('/', (req, res) => {
     res.send('Hello World');
 });
+app.use('/app', (req, res) => {
+    res.send("Hello Cloud App");
+});
 app.listen(3000, () => {
     console.log("Server is running");
 });
